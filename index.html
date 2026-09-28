@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Reference Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating empty frames (populated by JS) -->
+  <div class="floating-frames" id="floatingFrames"></div>
+
+  <main>
+    <header>
+      <h1>Art Reference Generator</h1>
+    </header>
+
+    <!-- Central Display -->
+    <section class="display-section">
+      <div class="subject-display" id="subjectDisplay">
+        <span class="placeholder-text">Select a medium below...</span>
+      </div>
+      <button id="generateBtn" class="generate-btn" disabled>
+        Generate
+      </button>
+    </section>
+
+    <!-- Medium Buttons -->
+    <section class="medium-section">
+      <div class="medium-buttons" id="mediumButtons">
+        <button data-medium="oil painting" class="medium-btn">Oil</button>
+        <button data-medium="pencil sketch" class="medium-btn">Pen</button>
+        <button data-medium="marker art" class="medium-btn">Marker</button>
+        <button data-medium="watercolor painting" class="medium-btn">Water</button>
+        <button data-medium="pastel drawing" class="medium-btn">Pastel</button>
+        <button data-medium="graphite drawing" class="medium-btn">Graphite</button>
+      </div>
+    </section>
+
+    <!-- Results Grid -->
+    <section class="results-section">
+      <div class="image-grid" id="imageGrid"></div>
+      <p class="disclaimer" id="disclaimer"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
